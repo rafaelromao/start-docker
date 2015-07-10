@@ -13,7 +13,7 @@ function Start-Docker() {
 		Write-Host "Starting boot2docker VM..."
 		boot2docker.exe start 2> $null | Out-Null
 	}
-	# Check if boot2docker VM is already running
+	# Check if boot2docker VM is running
 	$status = boot2docker.exe status 2>&1 | Out-String
 	if ($status.Contains("running")) {
 		# Initialize the shell silently
