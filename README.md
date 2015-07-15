@@ -11,7 +11,7 @@ Powershell command to prepare docker commands to use via powershell
 - Download and unzip this repository
 - Run Install-Module.bat to install the start-docker module on powershell
 
-## What it will do?
+## What will it do?
 1. Download the ISO and create the boot2docker VM, if necessary
 2. Start the boot2docker VM, if necessary
 3. Initialize the shell to run docker commands
