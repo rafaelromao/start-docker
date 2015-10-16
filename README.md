@@ -1,8 +1,8 @@
 # start-docker
-Powershell command to prepare docker commands to use via powershell
+Powershell command to prepare docker-machines
 
 ## Prerequisites
-- boot2docker must be installed (no need to run the "boot2docker Start" script)
+- Docker ToolBox must be installed
 - Git bin folder must be on the system PATH
 - Powershell execution policy must be set to remotesigned, at least
 - Hyper-V must be disabled
@@ -12,10 +12,16 @@ Powershell command to prepare docker commands to use via powershell
 - Run Install-Module.bat to install the start-docker module on powershell
 
 ## What will it do?
-1. Download the ISO and create the boot2docker VM, if necessary
-2. Start the boot2docker VM, if necessary
+1. Download the ISO and create the docker dev VM, if necessary
+2. Start the docker dev VM, if necessary
 3. Initialize the shell to run docker commands
 
 ## How to use it
 - Run "start-docker"
 - Run "docker ps" to see if all is okay
+
+## License
+MIT License
+
+## Versioning
+SemVer 2.0
