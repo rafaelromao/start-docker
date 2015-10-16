@@ -3,7 +3,7 @@ function Start-Docker($machinename) {
 		$machinename = "dev";
 	}
 	# Check if docker VM already exists
-	$status = docker-machine.exe status 2>&1 | Out-String
+	$status = docker-machine.exe status $machinename 2>&1 | Out-String
 	if ($status.Contains("unable to load host")) {
 		# Create docker VM
 		Write-Host "Creating and starting docker $machinename VM..."
